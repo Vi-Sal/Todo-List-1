@@ -34,6 +34,11 @@ function filterTodos(search) {
 
 // Handlers
 btnAdd.addEventListener("click", addTask);
+ipTask.addEventListener('keydown', (e) => {
+	if (e.key === 'Enter') {
+		addTask();
+	}
+});
 
 // Button delete todo
 todoList.addEventListener("click", (e) => {
